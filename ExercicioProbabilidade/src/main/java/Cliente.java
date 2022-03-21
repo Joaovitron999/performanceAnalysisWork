@@ -9,6 +9,15 @@ public class Cliente {
     Random gerador = new Random();
 
     public Cliente() {
-        float r = 
+        float r = gerador.nextInt(9)+1; // inteiros no intervalo aberto entre 1 e 10;
+        if(r<=3){
+            this.tipo = 0;
+        }
+        else if (r>=8){
+            this.tipo = 2
+        }
+        else {
+            this.tipo = 1;
+        }
     }
 }
